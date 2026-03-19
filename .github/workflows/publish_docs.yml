@@ -20,7 +20,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install sphinx sphinx-material
+          pip install sphinx sphinx_rtd_theme sphinx-material
 
       - name: Build documentation
         run: |

@@ -101,3 +101,10 @@ packages, or run the following command (with administrative privileges):
 .. code-block:: bash
 
    sudo dnf install libtirpc libtirpc-devel
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Architecture file
+
+   architec

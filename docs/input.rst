@@ -353,7 +353,7 @@ The ``position.dat`` file defines the structural framework and chemical composit
 
 Structure Definition
 --------------------
-* **Lattice Constant**: The first line defines the global scaling factor (e.g., 5.27).
+* **Lattice Constant**: The first line defines the global scaling factor (e.g., 5.53).
 * **Bravais Vectors**: Three lines defining the primitive lattice vectors.
 * **Site Position**: Cartesian coordinates (x, y, z) for each atom in the cell.
 

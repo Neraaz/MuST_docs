@@ -10,7 +10,6 @@ Preferred Method
 
 .. toctree::
    :maxdepth: 2
-   :caption:
 
    architec
 

@@ -2,118 +2,196 @@
 Usage
 *****
 
-Executables under bin/:
-#######################
+Executables under ``bin/``
+##########################
 
-1. mst:
-The corresponding main source code is MST/src/mst2.F90. It performs ab
-initio electronic structure calculations for 3-d structures.
-Main features:
-   * Linear scaling calculation based on LSMS method
-   * Calculations based on KKR, KKR-CPA, or LSMS method
-   * Muffin-tin potential or Full-potential
-   * Non-relativistic, Scalar-relativistic, or Relativistic
-   * Non-spin polarized, Spin-polarized, or Spin-canted
-   * Special k-points method for BZ integration
-   * LDA or GGA for the exchange-correlation potentials
-Input files:
-   * i_* file: The main input file which contains the controling parameters
-     for running the SCF calculation and the parameters defining the system, and
-     position data and potential file names
-   * position data file: The actual file name is specified in the i_* file.
-   * potential file(s): The actual file name and format
-   * info_* file (obsolete): The actual file name is specifiled in the i_* file. It
-     contains atom based controling parameters
-   * kmeshs.inp (optional): This is an optional input file, only used for the testing
-     purpose.
-   * emeshs.inp (optional): This is an optional input file, only used for the testing
-     purpose.
-   * Evec_* (optional): This is an optional input file, only used in the spin-canted
-     calculation case.
-Output files:
-   * o_n* file: This file contains the major output information. Note that
-     it will not be created if the output is instructed (in the i_* input file)
-     to be printed out to the screen.
-   * k_n* file: This file contains a brief information of the total energy
-     and the Fermi energy from each SCF iteration
-   * new potential file: The actual file name and format is specified in the
-     i_* or info_* file.
-Execution:
-   mpirun -np number_of_CPU_cores $(MuST_PATH)/bin/mst2 < i_file
-Example input files for various structures can be found under MST/sample/.
-Note: Unless otherwise changed name in archiecture file, the executable name is called
-"mst2" by default.
+1. ``mst``
+==========
 
-2. lsms
-The corresponding main source code is lsms/src/Main/lsms.cpp. It performs ab
-initio, linear scaling, electronic structure calculations for 3-d structures.
-Main features:
-   * Linear scaling calculation based on LSMS method
-   * Muffin-tin potential
-   * Non-relativistic, or Scalar-relativistic
-   * Non-spin polarized, Spin-polarized, or Spin-canted
-   * LDA or GGA for the exchange-correlation potentials
-Execution:
-   mpirun -np number_of_CPU_cores $(MuST_PATH)/bin/lsms < i_file
-Example input files for various structures can be found under lsms/Test/.
+The corresponding main source code is ``MST/src/mst2.F90``. It performs *ab initio*
+electronic structure calculations for 3-D structures.
 
-3. wl-lsms
-The corresponding main source code is lsms/src/Main/wl_lsms.cpp. It performs
-Wang-Landau Monte-Carlo simulation of random unit cell samples with energy data
-obtained from LSMS electronic structure calculation.
-Main features:
-   * Wang-Landau Monte-Carlo simulation method
-   * Driving linear scaling ab initio calculation of the energy data for the unit
-     cell samples
-Execution:
-   mpirun -np number_of_CPU_cores $(MuST_PATH)/bin/wl-lsms < i_file
-Example input files for various structures can be found under lsms/Test/.
+**Main features:**
 
-4. genap:
-A utility code (main: MST/util/generateAtomPosition.F90) for generating unit cell sample of
-ordered compounds or disordered alloys (with random distribution or short-range order)
-Execution:
+- Linear scaling calculation based on LSMS method
+- Calculations based on KKR, KKR-CPA, or LSMS method
+- Muffin-tin potential or full-potential
+- Non-relativistic, scalar-relativistic, or relativistic
+- Non-spin polarized, spin-polarized, or spin-canted
+- Special k-points method for Brillouin zone integration
+- LDA or GGA exchange-correlation potentials
+
+**Input files:**
+
+- ``i_*``: Main input file containing control parameters for SCF calculations,
+  system definition, atomic positions, and potential file names
+- Position data file: File name specified in ``i_*``
+- Potential file(s): File name and format specified in input
+- ``info_*`` (obsolete): Atom-based control parameters (specified in ``i_*``)
+- ``kmeshs.inp`` (optional): Used for testing purposes
+- ``emeshs.inp`` (optional): Used for testing purposes
+- ``Evec_*`` (optional): Used for spin-canted calculations
+
+**Output files:**
+
+- ``o_n*``: Main output file (may not be created if output is redirected to screen)
+- ``k_n*``: Contains total energy and Fermi energy for each SCF iteration
+- New potential file: Name and format defined in ``i_*`` or ``info_*``
+
+**Execution:**
+
+.. code-block:: bash
+
+   mpirun -np <num_cores> $(MuST_PATH)/bin/mst2 < i_file
+
+Example input files are available under ``MST/sample/``.
+
+.. note::
+
+   Unless modified in the architecture file, the executable name is ``mst2``.
+
+---
+
+2. ``lsms``
+===========
+
+Main source: ``lsms/src/Main/lsms.cpp``. Performs *ab initio*, linear-scaling
+electronic structure calculations for 3-D systems.
+
+**Main features:**
+
+- Linear scaling based on LSMS method
+- Muffin-tin potential
+- Non-relativistic or scalar-relativistic
+- Non-spin polarized, spin-polarized, or spin-canted
+- LDA or GGA exchange-correlation
+
+**Execution:**
+
+.. code-block:: bash
+
+   mpirun -np <num_cores> $(MuST_PATH)/bin/lsms < i_file
+
+Example inputs: ``lsms/Test/``
+
+---
+
+3. ``wl-lsms``
+==============
+
+Main source: ``lsms/src/Main/wl_lsms.cpp``. Performs Wang–Landau Monte Carlo
+simulations using LSMS-generated energy data.
+
+**Main features:**
+
+- Wang–Landau Monte Carlo method
+- Drives linear-scaling *ab initio* energy calculations
+
+**Execution:**
+
+.. code-block:: bash
+
+   mpirun -np <num_cores> $(MuST_PATH)/bin/wl-lsms < i_file
+
+Example inputs: ``lsms/Test/``
+
+---
+
+4. ``genap``
+============
+
+Utility code (``MST/util/generateAtomPosition.F90``) for generating unit cell
+samples of ordered compounds or disordered alloys.
+
+**Execution:**
+
+.. code-block:: bash
+
    $(MuST_PATH)/bin/genap
-The input data can be taken at the prompt on computer screen.
 
-5. measureVoronoi
-A utility code (main: MST/util/measureVoronoi.F90) for determining the geometric properties of
-voronoi polyhedra generated for each atom in a unit cell sample.
-Execution:
-   mpirun -np number_of_CPU_cores $(MuST_PATH)/bin/measureVoronoi < i_file
-Note, the input file, i_file, is the same as the one used for running bin/mst2.
+Input is provided interactively via the terminal.
 
-6. murn
-A utility code (main: MST/util/murn_new.F90) for determining the ground state properties
-(lattice constant, unit cell volume, and bulk modulus) of a structure with given data for
- energy versus volume (or lattice constant).
-Execution:
+---
+
+5. ``measureVoronoi``
+=====================
+
+Utility (``MST/util/measureVoronoi.F90``) for computing geometric properties
+of Voronoi polyhedra for atoms in a unit cell.
+
+**Execution:**
+
+.. code-block:: bash
+
+   mpirun -np <num_cores> $(MuST_PATH)/bin/measureVoronoi < i_file
+
+.. note::
+
+   The input file is the same as used for ``mst2``.
+
+---
+
+6. ``murn``
+===========
+
+Utility (``MST/util/murn_new.F90``) for determining ground-state properties
+(lattice constant, volume, bulk modulus) from energy vs. volume data.
+
+**Execution:**
+
+.. code-block:: bash
+
    $(MuST_PATH)/bin/murn < input_file
-An example input file for murn, inp_murn, can be found under MST/sample/Co/a0/.
 
-7. newa:
-A utility code (main: MST/util/newa.F) for generating an initial atomic potential
-Input file:
-!   _a_in: input file specifying the atom type, spin information, output file name, etc
-Output files:
-   *_a_out: standard file, whose name is specified in the input file
-   *_a_pot: potential file, whose name is specified in the input file
-Execution:
+Example input: ``MST/sample/Co/a0/inp_murn``
+
+---
+
+7. ``newa``
+===========
+
+Utility (``MST/util/newa.F``) for generating initial atomic potentials.
+
+**Input file:**
+
+- ``*_a_in``: Specifies atom type, spin, output names, etc.
+
+**Output files:**
+
+- ``*_a_out``: Standard output file
+- ``*_a_pot``: Generated potential file
+
+**Execution:**
+
+.. code-block:: bash
+
    $(MuST_PATH)/bin/newa < input_file
-An example input file for newa, Mg_a_in, for generating Mg atom potential can be found under
-MST/sample/Mg/Atom/.
 
-8. newss:
-A utility code (main: MST/util/newss.F) for generating an initial potential for the KKR/KKR-CPA/LSMS
-based electronic structure calculations.
-Input files:
-   *_ss_in: input file specifying lattice constant, crystal structure, potential file name, etc.
-   *_a_pot: potential file generated from newa
-Output files:
-   *_ss_out: contains major ouput data
-   *_ss_k:   contains a brief information of the total energy and the rms from each SCF iteration
-   *_ss_pot: the starting potential for the KKR/LSMS calculation
-Execution:
+Example: ``MST/sample/Mg/Atom/Mg_a_in``
+
+---
+
+8. ``newss``
+============
+
+Utility (``MST/util/newss.F``) for generating starting potentials for
+KKR/KKR-CPA/LSMS calculations.
+
+**Input files:**
+
+- ``*_ss_in``: Defines lattice, structure, and potential parameters
+- ``*_a_pot``: Generated using ``newa``
+
+**Output files:**
+
+- ``*_ss_out``: Main output data
+- ``*_ss_k``: Energy and RMS per SCF iteration
+- ``*_ss_pot``: Generated starting potential
+
+**Execution:**
+
+.. code-block:: bash
+
    $(MuST_PATH)/bin/newss < input_file
-An example input file for newss, Mg_ss_in, for generating Mg starting potential for KKR/KKR-CPA/LSMS
-can be found under MST/sample/Mg/Atom/.
+
+Example: ``MST/sample/Mg/Atom/Mg_ss_in``

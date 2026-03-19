@@ -1,6 +1,11 @@
 Welcome to the MuST documentation!
 ===================================
 
+.. image:: _static/MuST_logo.png
+   :align: center
+   :width: 600px
+   :height: 400px
+
 **MuST** is a research project supported by National Science Fundation to build
 a public ab initio electronic structure calculation software package,
 with petascale and beyond computing capability, for the first principles

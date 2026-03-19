@@ -1,6 +1,23 @@
-*****
-Usage
-*****
+********************
+Package Description
+********************
+
+Available Scientific Packages
+=============================
+
+- **MST**: Perform KKR, LSMS, single-site, and Cluster Averaged KKR-CPA.
+- **lsms**: Perform LSMS and Wang-Landau LSMS. This package is optimized for extreme performance on petascale and exascale systems.
+- **KUBO**: Perform first-principles electrical conductivity calculations.
+
+User Support Folders
+====================
+
+- **potentials**: Contains the starting potential for selected elements.
+- **architecture**: Contains preset makefile parameters ("architecture files") for a wide variety of computer systems.
+- **docs**: Contains installation instructions, license information, and user guides.
+- **external**: Contains external libraries required or optionally required by MuST, e.g., FFTW, Lua, P3DFFT, and LibXC.
+- **tutorials**: Contains hands-on exercises and training materials.
+- **ase_must**: Provides Atomic Simulation Environment (ASE) support for MuST.
 
 Executables under ``bin/``
 ##########################

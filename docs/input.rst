@@ -1,5 +1,5 @@
 ============================================
-LSMS Input Parameters: Technical Reference
+Input Parameters
 ============================================
 
 This document provides the exhaustive list of input parameters for the LSMS code. It includes default values, allowed ranges, and technical logic extracted from the source input file.
@@ -357,25 +357,51 @@ Structure Definition
 * **Bravais Vectors**: Three lines defining the primitive lattice vectors.
 * **Site Position**: Cartesian coordinates (x, y, z) for each atom in the cell.
 
-CPA Configuration
------------------
-For random alloys using the Coherent Potential Approximation (CPA), the format is:
+Crystal Structure: CuZn (BCC)
+--------------------------------------
 
+Lattice Parameter
+-----------------
+- **a** = 5.53 Å
+
+Bravais Lattice Vectors
+-----------------------
 .. code-block:: text
 
-   CPA [x] [y] [z] [Species1] [Conc1] [Species2] [Conc2] ...
+    1.00000000000    0.00000000000    0.00000000000
+    0.00000000000    1.00000000000    0.00000000000
+    0.00000000000    0.00000000000    1.00000000000
 
-Example for AlCoCrFeNi HEA:
-    ``CPA  0.0 0.0 0.0   Al 0.2 Co 0.2 Cr 0.2 Fe 0.2 Ni 0.2``
+Atomic Positions
+----------------
+.. code-block:: text
 
+    Cu  0.00000000000    0.00000000000    0.00000000000
+    Zn  0.50000000000    0.50000000000    0.50000000000
 
-Crystal (CuZn, BCC)
-----------------------------------------------------
-5.53
-# Bravais lattice
-    1.00000000000    0.00000000000    0.0000000000
-    0.00000000000    1.00000000000    0.0000000000
-    0.00000000000    0.00000000000    1.0000000000
-# Atomic position
-Cu  0.00000000000    0.00000000000    0.00000000000
-Zn  0.50000000000    0.50000000000    0.50000000000
+Crystal Structure: Pd-Ag Random Alloy (FCC, CPA)
+---------------------------------------------------
+
+Lattice Parameter
+-----------------
+- **a** = 7.65 Å
+
+Bravais Lattice Vectors
+-----------------------
+.. code-block:: text
+
+    0.50000000000    0.50000000000    0.00000000000
+    0.00000000000    0.50000000000    0.50000000000
+    0.50000000000    0.00000000000    0.50000000000
+
+Atomic Positions (CPA)
+----------------------
+.. code-block:: text
+
+    CPA  0.00000000000    0.00000000000    0.00000000000   Pd 0.4 Ag 0.6
+
+Notes
+-----
+- For random alloy calculations, use 'CPA' as the virtual atom name.
+- Coordinates are Cartesian (x, y, z) of the virtual atom.
+- The atomic species and their site concentrations follow the coordinates.

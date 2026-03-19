@@ -8,6 +8,12 @@ Preferred Method
 1. Under the ``architecture/`` directory, create or modify an architecture file
    by following an existing example.
 
+.. toctree::
+   :maxdepth: 2
+   :caption:
+
+   architec
+
 2. In the top-level directory (``MuST/``), run:
 
 .. code-block:: bash
@@ -101,10 +107,3 @@ packages, or run the following command (with administrative privileges):
 .. code-block:: bash
 
    sudo dnf install libtirpc libtirpc-devel
-
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Architecture file
-
-   architec

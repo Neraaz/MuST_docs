@@ -13,8 +13,6 @@
 import os
 import sys
 import sphinx_material
-#sys.path.insert(0, os.path.abspath('_ext'))
-#sys.path.insert(0, os.path.abspath('../src'))
 
 
 

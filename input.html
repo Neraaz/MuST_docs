@@ -363,13 +363,7 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#atomic-position-file-position-dat">Atomic Position File (position.dat)</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#structure-definition">Structure Definition</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#crystal-structure-cuzn-bcc">Crystal Structure: CuZn (BCC)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lattice-parameter">Lattice Parameter</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bravais-lattice-vectors">Bravais Lattice Vectors</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#atomic-positions">Atomic Positions</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#crystal-structure-pd-ag-random-alloy-fcc-cpa">Crystal Structure: Pd-Ag Random Alloy (FCC, CPA)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Lattice Parameter</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Bravais Lattice Vectors</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#atomic-positions-cpa">Atomic Positions (CPA)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#crystal-structure-cu-zn-random-alloy-fcc-cpa">Crystal Structure: Cu-Zn Random Alloy (FCC, CPA)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notes">Notes</a></li>
 </ul>
 </li>
@@ -385,31 +379,31 @@
                 <article class="bd-article">
                   
   <section id="input-parameters">
-<h1><a class="toc-backref" href="#id3" role="doc-backlink">Input Parameters</a><a class="headerlink" href="#input-parameters" title="Link to this heading">#</a></h1>
+<h1><a class="toc-backref" href="#id1" role="doc-backlink">Input Parameters</a><a class="headerlink" href="#input-parameters" title="Link to this heading">#</a></h1>
 <p>This document provides the exhaustive list of input parameters for the LSMS code. It includes default values, allowed ranges, and technical logic extracted from the source input file.</p>
 <nav class="contents" id="table-of-contents">
 <p class="topic-title">Table of Contents</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#input-parameters" id="id3">Input Parameters</a></p>
+<li><p><a class="reference internal" href="#input-parameters" id="id1">Input Parameters</a></p>
 <ul>
-<li><p><a class="reference internal" href="#general-execution-file-i-o" id="id4">General Execution &amp; File I/O</a></p></li>
-<li><p><a class="reference internal" href="#output-verbosity-control" id="id5">Output &amp; Verbosity Control</a></p></li>
-<li><p><a class="reference internal" href="#electronic-structure-lda-logic" id="id6">Electronic Structure &amp; LDA Logic</a></p></li>
-<li><p><a class="reference internal" href="#energy-contour-integration" id="id7">Energy Contour Integration</a></p></li>
-<li><p><a class="reference internal" href="#single-site-k-space-solvers" id="id8">Single Site &amp; K-Space Solvers</a></p></li>
-<li><p><a class="reference internal" href="#mixing-convergence-tolerances" id="id9">Mixing &amp; Convergence Tolerances</a></p></li>
-<li><p><a class="reference internal" href="#spin-dynamics-magnetism" id="id10">Spin Dynamics &amp; Magnetism</a></p></li>
-<li><p><a class="reference internal" href="#lmax-cutoffs-radial-grids" id="id11">Lmax Cutoffs &amp; Radial Grids</a></p></li>
-<li><p><a class="reference internal" href="#local-interaction-zone-liz-cpa" id="id12">Local Interaction Zone (LIZ) &amp; CPA</a></p></li>
-<li><p><a class="reference internal" href="#advanced-calculation-modules" id="id13">Advanced Calculation Modules</a></p></li>
-<li><p><a class="reference internal" href="#visualization-movie" id="id14">Visualization &amp; Movie</a></p></li>
-<li><p><a class="reference internal" href="#atomic-position-file-position-dat" id="id15">Atomic Position File (position.dat)</a></p></li>
+<li><p><a class="reference internal" href="#general-execution-file-i-o" id="id2">General Execution &amp; File I/O</a></p></li>
+<li><p><a class="reference internal" href="#output-verbosity-control" id="id3">Output &amp; Verbosity Control</a></p></li>
+<li><p><a class="reference internal" href="#electronic-structure-lda-logic" id="id4">Electronic Structure &amp; LDA Logic</a></p></li>
+<li><p><a class="reference internal" href="#energy-contour-integration" id="id5">Energy Contour Integration</a></p></li>
+<li><p><a class="reference internal" href="#single-site-k-space-solvers" id="id6">Single Site &amp; K-Space Solvers</a></p></li>
+<li><p><a class="reference internal" href="#mixing-convergence-tolerances" id="id7">Mixing &amp; Convergence Tolerances</a></p></li>
+<li><p><a class="reference internal" href="#spin-dynamics-magnetism" id="id8">Spin Dynamics &amp; Magnetism</a></p></li>
+<li><p><a class="reference internal" href="#lmax-cutoffs-radial-grids" id="id9">Lmax Cutoffs &amp; Radial Grids</a></p></li>
+<li><p><a class="reference internal" href="#local-interaction-zone-liz-cpa" id="id10">Local Interaction Zone (LIZ) &amp; CPA</a></p></li>
+<li><p><a class="reference internal" href="#advanced-calculation-modules" id="id11">Advanced Calculation Modules</a></p></li>
+<li><p><a class="reference internal" href="#visualization-movie" id="id12">Visualization &amp; Movie</a></p></li>
+<li><p><a class="reference internal" href="#atomic-position-file-position-dat" id="id13">Atomic Position File (position.dat)</a></p></li>
 </ul>
 </li>
 </ul>
 </nav>
 <section id="general-execution-file-i-o">
-<h2><a class="toc-backref" href="#id4" role="doc-backlink">General Execution &amp; File I/O</a><a class="headerlink" href="#general-execution-file-i-o" title="Link to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">General Execution &amp; File I/O</a><a class="headerlink" href="#general-execution-file-i-o" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="table">
 <colgroup>
 <col style="width: 35.0%" />
@@ -468,7 +462,7 @@
 </div>
 </section>
 <section id="output-verbosity-control">
-<h2><a class="toc-backref" href="#id5" role="doc-backlink">Output &amp; Verbosity Control</a><a class="headerlink" href="#output-verbosity-control" title="Link to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Output &amp; Verbosity Control</a><a class="headerlink" href="#output-verbosity-control" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="table">
 <colgroup>
 <col style="width: 35.0%" />
@@ -511,7 +505,7 @@
 </div>
 </section>
 <section id="electronic-structure-lda-logic">
-<h2><a class="toc-backref" href="#id6" role="doc-backlink">Electronic Structure &amp; LDA Logic</a><a class="headerlink" href="#electronic-structure-lda-logic" title="Link to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Electronic Structure &amp; LDA Logic</a><a class="headerlink" href="#electronic-structure-lda-logic" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="table">
 <colgroup>
 <col style="width: 35.0%" />
@@ -566,7 +560,7 @@
 </div>
 </section>
 <section id="energy-contour-integration">
-<h2><a class="toc-backref" href="#id7" role="doc-backlink">Energy Contour Integration</a><a class="headerlink" href="#energy-contour-integration" title="Link to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Energy Contour Integration</a><a class="headerlink" href="#energy-contour-integration" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="table">
 <colgroup>
 <col style="width: 35.0%" />
@@ -621,7 +615,7 @@
 </div>
 </section>
 <section id="single-site-k-space-solvers">
-<h2><a class="toc-backref" href="#id8" role="doc-backlink">Single Site &amp; K-Space Solvers</a><a class="headerlink" href="#single-site-k-space-solvers" title="Link to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Single Site &amp; K-Space Solvers</a><a class="headerlink" href="#single-site-k-space-solvers" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="table">
 <colgroup>
 <col style="width: 35.0%" />
@@ -668,7 +662,7 @@
 </div>
 </section>
 <section id="mixing-convergence-tolerances">
-<h2><a class="toc-backref" href="#id9" role="doc-backlink">Mixing &amp; Convergence Tolerances</a><a class="headerlink" href="#mixing-convergence-tolerances" title="Link to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">Mixing &amp; Convergence Tolerances</a><a class="headerlink" href="#mixing-convergence-tolerances" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="table">
 <colgroup>
 <col style="width: 35.0%" />
@@ -719,7 +713,7 @@
 </div>
 </section>
 <section id="spin-dynamics-magnetism">
-<h2><a class="toc-backref" href="#id10" role="doc-backlink">Spin Dynamics &amp; Magnetism</a><a class="headerlink" href="#spin-dynamics-magnetism" title="Link to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id8" role="doc-backlink">Spin Dynamics &amp; Magnetism</a><a class="headerlink" href="#spin-dynamics-magnetism" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="table">
 <colgroup>
 <col style="width: 35.0%" />
@@ -758,7 +752,7 @@
 </div>
 </section>
 <section id="lmax-cutoffs-radial-grids">
-<h2><a class="toc-backref" href="#id11" role="doc-backlink">Lmax Cutoffs &amp; Radial Grids</a><a class="headerlink" href="#lmax-cutoffs-radial-grids" title="Link to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id9" role="doc-backlink">Lmax Cutoffs &amp; Radial Grids</a><a class="headerlink" href="#lmax-cutoffs-radial-grids" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="table">
 <colgroup>
 <col style="width: 35.0%" />
@@ -801,7 +795,7 @@
 </div>
 </section>
 <section id="local-interaction-zone-liz-cpa">
-<h2><a class="toc-backref" href="#id12" role="doc-backlink">Local Interaction Zone (LIZ) &amp; CPA</a><a class="headerlink" href="#local-interaction-zone-liz-cpa" title="Link to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id10" role="doc-backlink">Local Interaction Zone (LIZ) &amp; CPA</a><a class="headerlink" href="#local-interaction-zone-liz-cpa" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="table">
 <colgroup>
 <col style="width: 35.0%" />
@@ -844,7 +838,7 @@
 </div>
 </section>
 <section id="advanced-calculation-modules">
-<h2><a class="toc-backref" href="#id13" role="doc-backlink">Advanced Calculation Modules</a><a class="headerlink" href="#advanced-calculation-modules" title="Link to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id11" role="doc-backlink">Advanced Calculation Modules</a><a class="headerlink" href="#advanced-calculation-modules" title="Link to this heading">#</a></h2>
 <section id="superconductivity-tc">
 <h3>Superconductivity (Tc)<a class="headerlink" href="#superconductivity-tc" title="Link to this heading">#</a></h3>
 <ul class="simple">
@@ -864,7 +858,7 @@
 </section>
 </section>
 <section id="visualization-movie">
-<h2><a class="toc-backref" href="#id14" role="doc-backlink">Visualization &amp; Movie</a><a class="headerlink" href="#visualization-movie" title="Link to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id12" role="doc-backlink">Visualization &amp; Movie</a><a class="headerlink" href="#visualization-movie" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="table">
 <colgroup>
 <col style="width: 35.0%" />
@@ -899,7 +893,7 @@
 </div>
 </section>
 <section id="atomic-position-file-position-dat">
-<h2><a class="toc-backref" href="#id15" role="doc-backlink">Atomic Position File (position.dat)</a><a class="headerlink" href="#atomic-position-file-position-dat" title="Link to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id13" role="doc-backlink">Atomic Position File (position.dat)</a><a class="headerlink" href="#atomic-position-file-position-dat" title="Link to this heading">#</a></h2>
 <p>The <code class="docutils literal notranslate"><span class="pre">position.dat</span></code> file defines the structural framework and chemical composition of the system.</p>
 <section id="structure-definition">
 <h3>Structure Definition<a class="headerlink" href="#structure-definition" title="Link to this heading">#</a></h3>
@@ -911,48 +905,26 @@
 </section>
 <section id="crystal-structure-cuzn-bcc">
 <h3>Crystal Structure: CuZn (BCC)<a class="headerlink" href="#crystal-structure-cuzn-bcc" title="Link to this heading">#</a></h3>
-</section>
-<section id="lattice-parameter">
-<h3>Lattice Parameter<a class="headerlink" href="#lattice-parameter" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p><strong>a</strong> = 5.53 Å</p></li>
-</ul>
-</section>
-<section id="bravais-lattice-vectors">
-<h3>Bravais Lattice Vectors<a class="headerlink" href="#bravais-lattice-vectors" title="Link to this heading">#</a></h3>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>1.00000000000    0.00000000000    0.00000000000
-0.00000000000    1.00000000000    0.00000000000
-0.00000000000    0.00000000000    1.00000000000
-</pre></div>
-</div>
-</section>
-<section id="atomic-positions">
-<h3>Atomic Positions<a class="headerlink" href="#atomic-positions" title="Link to this heading">#</a></h3>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Cu  0.00000000000    0.00000000000    0.00000000000
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>5.53
+# Bravais lattice
+    1.00000000000    0.00000000000    0.0000000000
+    0.00000000000    1.00000000000    0.0000000000
+    0.00000000000    0.00000000000    1.0000000000
+# Atomic position
+Cu  0.00000000000    0.00000000000    0.00000000000
 Zn  0.50000000000    0.50000000000    0.50000000000
 </pre></div>
 </div>
 </section>
-<section id="crystal-structure-pd-ag-random-alloy-fcc-cpa">
-<h3>Crystal Structure: Pd-Ag Random Alloy (FCC, CPA)<a class="headerlink" href="#crystal-structure-pd-ag-random-alloy-fcc-cpa" title="Link to this heading">#</a></h3>
-</section>
-<section id="id1">
-<h3>Lattice Parameter<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p><strong>a</strong> = 7.65 Å</p></li>
-</ul>
-</section>
-<section id="id2">
-<h3>Bravais Lattice Vectors<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>0.50000000000    0.50000000000    0.00000000000
-0.00000000000    0.50000000000    0.50000000000
-0.50000000000    0.00000000000    0.50000000000
-</pre></div>
-</div>
-</section>
-<section id="atomic-positions-cpa">
-<h3>Atomic Positions (CPA)<a class="headerlink" href="#atomic-positions-cpa" title="Link to this heading">#</a></h3>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>CPA  0.00000000000    0.00000000000    0.00000000000   Pd 0.4 Ag 0.6
+<section id="crystal-structure-cu-zn-random-alloy-fcc-cpa">
+<h3>Crystal Structure: Cu-Zn Random Alloy (FCC, CPA)<a class="headerlink" href="#crystal-structure-cu-zn-random-alloy-fcc-cpa" title="Link to this heading">#</a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>5.53
+# Bravais lattice
+     0.50000000000    0.50000000000   -0.50000000000
+     0.50000000000   -0.50000000000    0.50000000000
+    -0.50000000000    0.50000000000    0.50000000000
+# Atomic position
+CPA  0.00000000000    0.00000000000    0.00000000000  Cu  0.50000  Zn  0.50000
 </pre></div>
 </div>
 </section>
@@ -1032,13 +1004,7 @@ Zn  0.50000000000    0.50000000000    0.50000000000
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#atomic-position-file-position-dat">Atomic Position File (position.dat)</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#structure-definition">Structure Definition</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#crystal-structure-cuzn-bcc">Crystal Structure: CuZn (BCC)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lattice-parameter">Lattice Parameter</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bravais-lattice-vectors">Bravais Lattice Vectors</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#atomic-positions">Atomic Positions</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#crystal-structure-pd-ag-random-alloy-fcc-cpa">Crystal Structure: Pd-Ag Random Alloy (FCC, CPA)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Lattice Parameter</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Bravais Lattice Vectors</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#atomic-positions-cpa">Atomic Positions (CPA)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#crystal-structure-cu-zn-random-alloy-fcc-cpa">Crystal Structure: Cu-Zn Random Alloy (FCC, CPA)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notes">Notes</a></li>
 </ul>
 </li>

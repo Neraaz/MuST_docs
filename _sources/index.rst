@@ -47,7 +47,9 @@ Contents
    :maxdepth: 2
    :caption: Contents
 
-   usage
    installation
+   Usage
+   input
+   tutorials
    contrib
    acknowledge

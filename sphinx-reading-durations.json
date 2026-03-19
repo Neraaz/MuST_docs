@@ -1,9 +1,9 @@
 {
-    "acknowledge": 0.022,
+    "acknowledge": 0.015,
     "contrib": 0.006,
     "index": 0.006,
-    "input": 0.208,
-    "installation": 0.011,
+    "input": 0.19,
+    "installation": 0.01,
     "tutorials": 0.001,
-    "usage": 0.02
+    "usage": 0.022
 }

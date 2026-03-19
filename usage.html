@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Usage &#8212; MuST  documentation</title>
+    <title>Package Description &#8212; MuST  documentation</title>
   
   
   
@@ -46,7 +46,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'usage';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="LSMS Input Parameters: Technical Reference" href="input.html" />
+    <link rel="next" title="Input Parameters" href="input.html" />
     <link rel="prev" title="Installation" href="installation.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -148,8 +148,8 @@
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Usage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="input.html">LSMS Input Parameters: Technical Reference</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Package Description</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input.html">Input Parameters</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contrib.html">Contributors</a></li>
 <li class="toctree-l1"><a class="reference internal" href="acknowledge.html">ACKNOWLEDGEMENT</a></li>
@@ -335,7 +335,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Usage</h1>
+    <h1>Package Description</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -345,17 +345,19 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#executables-under-bin">Executables under <code class="docutils literal notranslate"><span class="pre">bin/</span></code></a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mst">1. <code class="docutils literal notranslate"><span class="pre">mst</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lsms">2. <code class="docutils literal notranslate"><span class="pre">lsms</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wl-lsms">3. <code class="docutils literal notranslate"><span class="pre">wl-lsms</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#genap">4. <code class="docutils literal notranslate"><span class="pre">genap</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#measurevoronoi">5. <code class="docutils literal notranslate"><span class="pre">measureVoronoi</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#murn">6. <code class="docutils literal notranslate"><span class="pre">murn</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#newa">7. <code class="docutils literal notranslate"><span class="pre">newa</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#newss">8. <code class="docutils literal notranslate"><span class="pre">newss</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#available-scientific-packages">Available Scientific Packages</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#user-support-folders">User Support Folders</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#executables-under-bin">Executables under <code class="docutils literal notranslate"><span class="pre">bin/</span></code></a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mst">1. <code class="docutils literal notranslate"><span class="pre">mst</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lsms">2. <code class="docutils literal notranslate"><span class="pre">lsms</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wl-lsms">3. <code class="docutils literal notranslate"><span class="pre">wl-lsms</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#genap">4. <code class="docutils literal notranslate"><span class="pre">genap</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#measurevoronoi">5. <code class="docutils literal notranslate"><span class="pre">measureVoronoi</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#murn">6. <code class="docutils literal notranslate"><span class="pre">murn</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#newa">7. <code class="docutils literal notranslate"><span class="pre">newa</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#newss">8. <code class="docutils literal notranslate"><span class="pre">newss</span></code></a></li>
 </ul>
             </nav>
         </div>
@@ -367,12 +369,32 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="usage">
-<h1>Usage<a class="headerlink" href="#usage" title="Link to this heading">#</a></h1>
+  <section id="package-description">
+<h1>Package Description<a class="headerlink" href="#package-description" title="Link to this heading">#</a></h1>
+<section id="available-scientific-packages">
+<h2>Available Scientific Packages<a class="headerlink" href="#available-scientific-packages" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>MST</strong>: Perform KKR, LSMS, single-site, and Cluster Averaged KKR-CPA.</p></li>
+<li><p><strong>lsms</strong>: Perform LSMS and Wang-Landau LSMS. This package is optimized for extreme performance on petascale and exascale systems.</p></li>
+<li><p><strong>KUBO</strong>: Perform first-principles electrical conductivity calculations.</p></li>
+</ul>
+</section>
+<section id="user-support-folders">
+<h2>User Support Folders<a class="headerlink" href="#user-support-folders" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>potentials</strong>: Contains the starting potential for selected elements.</p></li>
+<li><p><strong>architecture</strong>: Contains preset makefile parameters (“architecture files”) for a wide variety of computer systems.</p></li>
+<li><p><strong>docs</strong>: Contains installation instructions, license information, and user guides.</p></li>
+<li><p><strong>external</strong>: Contains external libraries required or optionally required by MuST, e.g., FFTW, Lua, P3DFFT, and LibXC.</p></li>
+<li><p><strong>tutorials</strong>: Contains hands-on exercises and training materials.</p></li>
+<li><p><strong>ase_must</strong>: Provides Atomic Simulation Environment (ASE) support for MuST.</p></li>
+</ul>
 <section id="executables-under-bin">
-<h2>Executables under <code class="docutils literal notranslate"><span class="pre">bin/</span></code><a class="headerlink" href="#executables-under-bin" title="Link to this heading">#</a></h2>
+<h3>Executables under <code class="docutils literal notranslate"><span class="pre">bin/</span></code><a class="headerlink" href="#executables-under-bin" title="Link to this heading">#</a></h3>
+</section>
+</section>
 <section id="mst">
-<h3>1. <code class="docutils literal notranslate"><span class="pre">mst</span></code><a class="headerlink" href="#mst" title="Link to this heading">#</a></h3>
+<h2>1. <code class="docutils literal notranslate"><span class="pre">mst</span></code><a class="headerlink" href="#mst" title="Link to this heading">#</a></h2>
 <p>The corresponding main source code is <code class="docutils literal notranslate"><span class="pre">MST/src/mst2.F90</span></code>. It performs <em>ab initio</em>
 electronic structure calculations for 3-D structures.</p>
 <p><strong>Main features:</strong></p>
@@ -414,7 +436,7 @@ system definition, atomic positions, and potential file names</p></li>
 <p>—</p>
 </section>
 <section id="lsms">
-<h3>2. <code class="docutils literal notranslate"><span class="pre">lsms</span></code><a class="headerlink" href="#lsms" title="Link to this heading">#</a></h3>
+<h2>2. <code class="docutils literal notranslate"><span class="pre">lsms</span></code><a class="headerlink" href="#lsms" title="Link to this heading">#</a></h2>
 <p>Main source: <code class="docutils literal notranslate"><span class="pre">lsms/src/Main/lsms.cpp</span></code>. Performs <em>ab initio</em>, linear-scaling
 electronic structure calculations for 3-D systems.</p>
 <p><strong>Main features:</strong></p>
@@ -433,7 +455,7 @@ electronic structure calculations for 3-D systems.</p>
 <p>—</p>
 </section>
 <section id="wl-lsms">
-<h3>3. <code class="docutils literal notranslate"><span class="pre">wl-lsms</span></code><a class="headerlink" href="#wl-lsms" title="Link to this heading">#</a></h3>
+<h2>3. <code class="docutils literal notranslate"><span class="pre">wl-lsms</span></code><a class="headerlink" href="#wl-lsms" title="Link to this heading">#</a></h2>
 <p>Main source: <code class="docutils literal notranslate"><span class="pre">lsms/src/Main/wl_lsms.cpp</span></code>. Performs Wang–Landau Monte Carlo
 simulations using LSMS-generated energy data.</p>
 <p><strong>Main features:</strong></p>
@@ -449,7 +471,7 @@ simulations using LSMS-generated energy data.</p>
 <p>—</p>
 </section>
 <section id="genap">
-<h3>4. <code class="docutils literal notranslate"><span class="pre">genap</span></code><a class="headerlink" href="#genap" title="Link to this heading">#</a></h3>
+<h2>4. <code class="docutils literal notranslate"><span class="pre">genap</span></code><a class="headerlink" href="#genap" title="Link to this heading">#</a></h2>
 <p>Utility code (<code class="docutils literal notranslate"><span class="pre">MST/util/generateAtomPosition.F90</span></code>) for generating unit cell
 samples of ordered compounds or disordered alloys.</p>
 <p><strong>Execution:</strong></p>
@@ -460,7 +482,7 @@ samples of ordered compounds or disordered alloys.</p>
 <p>—</p>
 </section>
 <section id="measurevoronoi">
-<h3>5. <code class="docutils literal notranslate"><span class="pre">measureVoronoi</span></code><a class="headerlink" href="#measurevoronoi" title="Link to this heading">#</a></h3>
+<h2>5. <code class="docutils literal notranslate"><span class="pre">measureVoronoi</span></code><a class="headerlink" href="#measurevoronoi" title="Link to this heading">#</a></h2>
 <p>Utility (<code class="docutils literal notranslate"><span class="pre">MST/util/measureVoronoi.F90</span></code>) for computing geometric properties
 of Voronoi polyhedra for atoms in a unit cell.</p>
 <p><strong>Execution:</strong></p>
@@ -474,7 +496,7 @@ of Voronoi polyhedra for atoms in a unit cell.</p>
 <p>—</p>
 </section>
 <section id="murn">
-<h3>6. <code class="docutils literal notranslate"><span class="pre">murn</span></code><a class="headerlink" href="#murn" title="Link to this heading">#</a></h3>
+<h2>6. <code class="docutils literal notranslate"><span class="pre">murn</span></code><a class="headerlink" href="#murn" title="Link to this heading">#</a></h2>
 <p>Utility (<code class="docutils literal notranslate"><span class="pre">MST/util/murn_new.F90</span></code>) for determining ground-state properties
 (lattice constant, volume, bulk modulus) from energy vs. volume data.</p>
 <p><strong>Execution:</strong></p>
@@ -485,7 +507,7 @@ of Voronoi polyhedra for atoms in a unit cell.</p>
 <p>—</p>
 </section>
 <section id="newa">
-<h3>7. <code class="docutils literal notranslate"><span class="pre">newa</span></code><a class="headerlink" href="#newa" title="Link to this heading">#</a></h3>
+<h2>7. <code class="docutils literal notranslate"><span class="pre">newa</span></code><a class="headerlink" href="#newa" title="Link to this heading">#</a></h2>
 <p>Utility (<code class="docutils literal notranslate"><span class="pre">MST/util/newa.F</span></code>) for generating initial atomic potentials.</p>
 <p><strong>Input file:</strong></p>
 <ul class="simple">
@@ -504,7 +526,7 @@ of Voronoi polyhedra for atoms in a unit cell.</p>
 <p>—</p>
 </section>
 <section id="newss">
-<h3>8. <code class="docutils literal notranslate"><span class="pre">newss</span></code><a class="headerlink" href="#newss" title="Link to this heading">#</a></h3>
+<h2>8. <code class="docutils literal notranslate"><span class="pre">newss</span></code><a class="headerlink" href="#newss" title="Link to this heading">#</a></h2>
 <p>Utility (<code class="docutils literal notranslate"><span class="pre">MST/util/newss.F</span></code>) for generating starting potentials for
 KKR/KKR-CPA/LSMS calculations.</p>
 <p><strong>Input files:</strong></p>
@@ -523,7 +545,6 @@ KKR/KKR-CPA/LSMS calculations.</p>
 </pre></div>
 </div>
 <p>Example: <code class="docutils literal notranslate"><span class="pre">MST/sample/Mg/Atom/Mg_ss_in</span></code></p>
-</section>
 </section>
 </section>
 
@@ -552,7 +573,7 @@ KKR/KKR-CPA/LSMS calculations.</p>
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">LSMS Input Parameters: Technical Reference</p>
+        <p class="prev-next-title">Input Parameters</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -574,17 +595,19 @@ KKR/KKR-CPA/LSMS calculations.</p>
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#executables-under-bin">Executables under <code class="docutils literal notranslate"><span class="pre">bin/</span></code></a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mst">1. <code class="docutils literal notranslate"><span class="pre">mst</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lsms">2. <code class="docutils literal notranslate"><span class="pre">lsms</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wl-lsms">3. <code class="docutils literal notranslate"><span class="pre">wl-lsms</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#genap">4. <code class="docutils literal notranslate"><span class="pre">genap</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#measurevoronoi">5. <code class="docutils literal notranslate"><span class="pre">measureVoronoi</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#murn">6. <code class="docutils literal notranslate"><span class="pre">murn</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#newa">7. <code class="docutils literal notranslate"><span class="pre">newa</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#newss">8. <code class="docutils literal notranslate"><span class="pre">newss</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#available-scientific-packages">Available Scientific Packages</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#user-support-folders">User Support Folders</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#executables-under-bin">Executables under <code class="docutils literal notranslate"><span class="pre">bin/</span></code></a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mst">1. <code class="docutils literal notranslate"><span class="pre">mst</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lsms">2. <code class="docutils literal notranslate"><span class="pre">lsms</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wl-lsms">3. <code class="docutils literal notranslate"><span class="pre">wl-lsms</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#genap">4. <code class="docutils literal notranslate"><span class="pre">genap</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#measurevoronoi">5. <code class="docutils literal notranslate"><span class="pre">measureVoronoi</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#murn">6. <code class="docutils literal notranslate"><span class="pre">murn</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#newa">7. <code class="docutils literal notranslate"><span class="pre">newa</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#newss">8. <code class="docutils literal notranslate"><span class="pre">newss</span></code></a></li>
 </ul>
   </nav></div>
 

@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Welcome to the MuST Documentation! &#8212; MuST  documentation</title>
+    <title>MuST Project Overview &#8212; MuST  documentation</title>
   
   
   
@@ -41,10 +41,11 @@
     <script src="_static/documentation_options.js?v=5929fcd5"></script>
     <script src="_static/doctools.js?v=fd6eb6e6"></script>
     <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'contrib';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Usage" href="usage.html" />
+    <link rel="next" title="ACKNOWLEDGEMENT" href="acknowledge.html" />
+    <link rel="prev" title="Installation" href="installation.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -102,7 +103,7 @@
     
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="index.html">
   
   
   
@@ -137,8 +138,8 @@
 </li>
 
 
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="contrib.html">
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="#">
     MuST Project Overview
   </a>
 </li>
@@ -207,10 +208,8 @@
       
       
       
-        
-      
       <dialog id="pst-primary-sidebar-modal"></dialog>
-      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -239,8 +238,8 @@
 </li>
 
 
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="contrib.html">
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="#">
     MuST Project Overview
   </a>
 </li>
@@ -274,6 +273,15 @@
     
   </div>
   
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"></div>
+</nav></div>
+    </div>
+  
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
       <div class="sidebar-primary-item">
@@ -294,7 +302,31 @@
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article d-print-none"></div>
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">MuST Project Overview</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
               
               
               
@@ -302,64 +334,52 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="welcome-to-the-must-documentation">
-<h1>Welcome to the MuST Documentation!<a class="headerlink" href="#welcome-to-the-must-documentation" title="Link to this heading">#</a></h1>
-<a class="reference internal image-reference" href="_images/MuST_logo.png"><img alt="_images/MuST_logo.png" class="align-center" src="_images/MuST_logo.png" style="width: 200px; height: 200px;" />
-</a>
-<p><strong>MuST</strong> is a research project supported by the National Science Foundation (NSF) to build
-a public <em>ab initio</em> electronic structure calculation software package with petascale
-and beyond computing capability, for first-principles studies of quantum phenomena in
-disordered materials.</p>
-<p>The MuST package is now (as of January 1, 2020) free to download on GitHub
-(<a class="github reference external" href="https://github.com/mstsuite">mstsuite</a>) under a BSD 3-clause license.</p>
-<p>MuST is developed based on full-potential multiple scattering theory (also known as the
-Korringa-Kohn-Rostoker method) using the Green’s function approach. It builds upon decades
-of development of research codes led by Malcolm Stocks and his postdocs and students in
-the Theory Group of the Metals and Ceramics Division (later Materials Science and
-Technology Division) at Oak Ridge National Laboratory.</p>
-<p>The original research codes include:</p>
+  <section id="must-project-overview">
+<h1>MuST Project Overview<a class="headerlink" href="#must-project-overview" title="Link to this heading">#</a></h1>
+<p>The starting point of the MuST package is the integration of two research codes:
+<code class="docutils literal notranslate"><span class="pre">LSMS</span></code> (formerly LSMS3) and <code class="docutils literal notranslate"><span class="pre">MST</span></code> (formerly MST2), both originally based on the
+legacy LSMS-1 code developed in the mid-1990s at Oak Ridge National Laboratory.</p>
+<section id="lsms">
+<h2>LSMS<a class="headerlink" href="#lsms" title="Link to this heading">#</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">LSMS</span></code> code, maintained by Markus Eisenbach, is primarily written in C++. It
+consists of muffin-tin LSMS with an interface for Monte-Carlo simulation drivers.
+<code class="docutils literal notranslate"><span class="pre">LSMS</span></code> is one of the baseline benchmark codes for DOE COREL systems and has been
+selected as a CAAR project for exascale computing on the Frontier system. It demonstrates
+nearly ideal linear scaling with 96% parallel efficiency on the Titan machine at ORNL.</p>
+</section>
+<section id="mst">
+<h2>MST<a class="headerlink" href="#mst" title="Link to this heading">#</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">MST</span></code> code, maintained by Yang Wang, is mainly written in Fortran 90. It focuses
+on physics capabilities and serves as a platform for implementing and testing full-potential
+multiple scattering theory and its numerical algorithms. It includes LSMS, KKR, and KKR-CPA codes
+and supports:</p>
+<ol class="arabic simple">
+<li><p>Muffin-tin and full-potential calculations</p></li>
+<li><p>Non-relativistic, scalar-relativistic, and fully-relativistic approaches</p></li>
+<li><p>Non-spin-polarized, spin-polarized, and spin-canted <em>ab initio</em> electronic structure calculations</p></li>
+</ol>
+</section>
+<section id="kubo">
+<h2>KUBO<a class="headerlink" href="#kubo" title="Link to this heading">#</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">KUBO</span></code> code, maintained by Vishnu Raghuraman, is mainly written in Fortran 90. It
+implements the Kubo-Greenwood formula within the KKR-CPA framework and calculates the
+electrical conductivity of random alloys.</p>
+</section>
+<section id="project-team">
+<h2>Project Team<a class="headerlink" href="#project-team" title="Link to this heading">#</a></h2>
+<p>The MuST project is a collaborative effort requiring expertise from condensed matter
+physics, high-performance computing, computational materials science, applied mathematics,
+and software engineering communities. Current participants include:</p>
 <ul class="simple">
-<li><p>Korringa-Kohn-Rostoker Coherent Potential Approximation (KKR-CPA): A highly efficient
-<em>ab initio</em> method for the study of random alloys.</p></li>
-<li><p>Locally Self-consistent Multiple Scattering (LSMS) method: A linear-scaling <em>ab initio</em>
-code capable of treating extremely large disordered systems using the largest parallel
-supercomputers available.</p></li>
+<li><p>Chioncel, Liviu (Institute of Physics, Augsburg University, Germany)</p></li>
+<li><p>Eisenbach, Markus (Center for Computational Sciences, Oak Ridge National Laboratory, USA)</p></li>
+<li><p>Raghuraman, Vishnu (Department of Physics, Carnegie Mellon University, USA)</p></li>
+<li><p>Tam, Ka-ming (Department of Physics, Louisiana State University, USA)</p></li>
+<li><p>Terletska, Hanna (Department of Physics, Middle Tennessee State University, USA)</p></li>
+<li><p>Wang, Yang (Pittsburgh Supercomputing Center, Carnegie Mellon University, USA)</p></li>
+<li><p>Widom, Michael (Department of Physics, Carnegie Mellon University, USA)</p></li>
+<li><p>Zhang, Yi (Kavli Institute for Theoretical Sciences, Beijing 100190, China)</p></li>
 </ul>
-<p>It was originally suggested by Mark Jarrell, and demonstrated by model calculations, that
-strong disorder and localization effects can be studied within the LSMS formalism using
-cluster embedding in an effective medium with the Typical Medium Dynamical Cluster
-Approximation (TMDCA), enabling a scalable approach for first-principles studies of quantum
-materials.</p>
-<p>The ultimate goal of the MuST project is to provide a computational framework for investigating
-quantum phase transitions and electron localization in the presence of disorder in real
-materials, and to enable computational studies of local chemical correlation effects on
-magnetic structure, phase stability, and mechanical properties of solid-state materials
-with complex structures.</p>
-<section id="contents">
-<h2>Contents<a class="headerlink" href="#contents" title="Link to this heading">#</a></h2>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="usage.html#executables-under-bin">Executables under <code class="docutils literal notranslate"><span class="pre">bin/</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="installation.html#preferred-method">Preferred Method</a></li>
-<li class="toctree-l2"><a class="reference internal" href="installation.html#alternative-method">Alternative Method</a></li>
-<li class="toctree-l2"><a class="reference internal" href="installation.html#notes-for-fedora-systems">Notes for Fedora Systems</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="contrib.html">MuST Project Overview</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="contrib.html#lsms">LSMS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="contrib.html#mst">MST</a></li>
-<li class="toctree-l2"><a class="reference internal" href="contrib.html#kubo">KUBO</a></li>
-<li class="toctree-l2"><a class="reference internal" href="contrib.html#project-team">Project Team</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="acknowledge.html">ACKNOWLEDGEMENT</a></li>
-</ul>
-</div>
 </section>
 </section>
 
@@ -373,12 +393,21 @@ with complex structures.</p>
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="installation.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Installation</p>
+      </div>
+    </a>
     <a class="right-next"
-       href="usage.html"
+       href="acknowledge.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Usage</p>
+        <p class="prev-next-title">ACKNOWLEDGEMENT</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -401,7 +430,10 @@ with complex structures.</p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contents">Contents</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lsms">LSMS</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mst">MST</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kubo">KUBO</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-team">Project Team</a></li>
 </ul>
   </nav></div>
 

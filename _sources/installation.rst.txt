@@ -2,41 +2,102 @@
 Installation
 ************
 
-Preferred method:
-###################
+Preferred Method
+################
 
-1. Under architecture/ directory, create/modify an architecture file by following an existing example file;
+1. Under the ``architecture/`` directory, create or modify an architecture file
+   by following an existing example.
 
-2. In the top directory (MuST/), run the following commands to build executables
-make architecture-file-name (e.g., make linux-intel-nogpu)
-make install
+2. In the top-level directory (``MuST/``), run:
 
-Note --
-make clean: delete the object, library, executable files under lsms and MST from installation
-make distclean: delete the object, library, executable, and architecture.h files under lsms and MST from installation; also
-                delete the executables under bin/.
+.. code-block:: bash
 
-Alternative method:
-###################
+   make <architecture-file-name>
+   make install
 
-The code MST (under MST/) and LSMS/WL-LSMS (under lsms/) can be built separately by running make under MST
-and lsms. The executables can be found under MST/bin and lsms/bin, respectively. It requires to create
-archietecture.h under MST and lsms using symbolic link. Steps are as follows:
-* To build MST,
-1. cd MST
-2. set SystemName in Makefile (at line 6) to a proper name, or execute the following command:
-   ln -s arch/architecture_file architecture.h
-3. make
-* To build LSMS/WL-LSMS,
-1. cd lsms
-2. ln -s arch/architecture_file architecture.h
-3. make
+Example:
 
-Notes to the user of Fedora systems
-###################################
-MST may require using External Data Representation (XDR) library to store potential and charge density data.
-Unfortunately, the latest Fedora Linux system does not place the library in conventional locations. Therefore,
-before installing MuST or MST, please make sure that /usr/include/tirpc and /usr/include/tirpc/rpc exist. If not,
-you need to ask your system administrator to istall libtirpc and librirpc-devel for you, or to run the following command
-if you have the sys-admin privilige:
+.. code-block:: bash
+
+   make linux-intel-nogpu
+   make install
+
+.. note::
+
+   - ``make clean``: Removes object, library, and executable files under
+     ``lsms`` and ``MST``.
+   - ``make distclean``: Removes object, library, executable, and
+     ``architecture.h`` files under ``lsms`` and ``MST``, and also deletes
+     executables under ``bin/``.
+
+---
+
+Alternative Method
+##################
+
+The ``MST`` (under ``MST/``) and ``LSMS/WL-LSMS`` (under ``lsms/``) components
+can be built separately.
+
+Executables will be located under ``MST/bin`` and ``lsms/bin``, respectively.
+This method requires creating a symbolic link to ``architecture.h``.
+
+**Build MST:**
+
+1. Change directory:
+
+   .. code-block:: bash
+
+      cd MST
+
+2. Set ``SystemName`` in the ``Makefile`` (line 6), or create a symbolic link:
+
+   .. code-block:: bash
+
+      ln -s arch/<architecture_file> architecture.h
+
+3. Compile:
+
+   .. code-block:: bash
+
+      make
+
+**Build LSMS / WL-LSMS:**
+
+1. Change directory:
+
+   .. code-block:: bash
+
+      cd lsms
+
+2. Create symbolic link:
+
+   .. code-block:: bash
+
+      ln -s arch/<architecture_file> architecture.h
+
+3. Compile:
+
+   .. code-block:: bash
+
+      make
+
+---
+
+Notes for Fedora Systems
+########################
+
+``MST`` may require the External Data Representation (XDR) library to store
+potential and charge density data.
+
+On newer Fedora systems, this library may not be located in standard paths.
+Ensure the following directories exist:
+
+- ``/usr/include/tirpc``
+- ``/usr/include/tirpc/rpc``
+
+If they are missing, ask your system administrator to install the required
+packages, or run the following command (with administrative privileges):
+
+.. code-block:: bash
+
    sudo dnf install libtirpc libtirpc-devel

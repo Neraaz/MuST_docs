@@ -1,4 +1,4 @@
-Welcome to the MuST documentation!
+Welcome to the MuST Documentation!
 ===================================
 
 .. image:: _static/MuST_logo.png
@@ -6,81 +6,48 @@ Welcome to the MuST documentation!
    :width: 200px
    :height: 200px
 
-**MuST** is a research project supported by National Science Fundation to build
-a public ab initio electronic structure calculation software package,
-with petascale and beyond computing capability, for the first principles
-study of quantum phenomena in disordered materials. The MuST package is now
-(as of January 1st, Year 2020) free to download on GitHub (https://github.com/mstsuite)
-under a BSD 3-clause license.
+**MuST** is a research project supported by the National Science Foundation (NSF) to build 
+a public *ab initio* electronic structure calculation software package with petascale 
+and beyond computing capability, for first-principles studies of quantum phenomena in 
+disordered materials.  
 
-MuST is developed based on full-potential multiple scattering theory, also
-known as Korringa-Kohn-Rostoker method, with Green function approach. It is
-built upon decades of development of research codes led by Malcolm Stocks, and
-his postdocs and students, in the Theory Group of Metals and Ceramics Division,
-which later became Materials Science and Technology Division, in Oak Ridge National
-Laboratory. The original research codes include Korringa-Kohn-Rostoker Coherent
-Potential Approximation (KKR-CPA), a highly efficient ab initio method for the
-study of random alloys, and Locally Self-consistent Multiple Scattering (LSMS)
-method, a linear scaling ab initio code capable of treating extremely large
-disordered systems from the first principles using the largest parallel supercomputers
-available. It is originally suggested by Mark Jarrell, and also shown by model calculations,
-that strong disorder and localization effects can also be studied within the LSMS
-formalism with cluster embedding in an effective medium with the Typical Medium
-Dynamical Cluster Approximation (TMDCA), which enables a scalable approach for first
-principles studies of quantum materials.
+The MuST package is now (as of January 1, 2020) free to download on GitHub 
+(`https://github.com/mstsuite <https://github.com/mstsuite>`_) under a BSD 3-clause license.
 
-The ultimate goal of MuST project is to provide a computational framework for
-the investigation of quantum phase transitions and electron localization in the
-presence of disorder in real materials, and enable the computational study of
-local chemical correlation effects on the magnetic structure, phase stability,
-and mechanical properties of solid state materials with complex structures.
+MuST is developed based on full-potential multiple scattering theory (also known as the 
+Korringa-Kohn-Rostoker method) using the Green’s function approach. It builds upon decades 
+of development of research codes led by Malcolm Stocks and his postdocs and students in 
+the Theory Group of the Metals and Ceramics Division (later Materials Science and 
+Technology Division) at Oak Ridge National Laboratory.  
 
-Ther starting point of the MuST package is the integration of two research codes: LSMS
-(formerly LSMS3) and MST (formerly MST2), both are originally based on the legacy LSMS-1
-code developed in the mid of 1990s in Oak Ridge National Laboratory.
+The original research codes include:
 
-The LSMS code, maintained by Markus Eisenbach, is mainly written in C++. It consists
-of muffin-tin LSMS with an interface for Monte-Carlo simulation driver. The LSMS code
-is one of the baseline benchmark codes for DoE COREL systems and has also been selected as
-one of the CAAR projects for exascale computing on Frontier system. The LSMS code demonstrates
-nearly ideal linear scaling with 96% parallel scaling efficiency across the Titan machine
-at ORNL.
+- Korringa-Kohn-Rostoker Coherent Potential Approximation (KKR-CPA): A highly efficient 
+  *ab initio* method for the study of random alloys.
+- Locally Self-consistent Multiple Scattering (LSMS) method: A linear-scaling *ab initio* 
+  code capable of treating extremely large disordered systems using the largest parallel 
+  supercomputers available.
 
-The MST code, maintained by Yang Wang, is mainly written in FORTRAN 90. It focuses on physics
-capabilities, and in the mean time serves as a platform for implementing and testing full-
-potential multiple scattering theory and its numerical algorithms. It consists of LSMS, KKR,
-and KKR-CPA codes and is capable of performing 1) muffin-tin and full-potential;
-2) non-relativistic, scalar-relativistic, and fully-relativistic; and 3) non-spin-polarized,
-spin-polarized, and spin-canted ab initio electronic structure calculations.
+It was originally suggested by Mark Jarrell, and demonstrated by model calculations, that 
+strong disorder and localization effects can be studied within the LSMS formalism using 
+cluster embedding in an effective medium with the Typical Medium Dynamical Cluster 
+Approximation (TMDCA), enabling a scalable approach for first-principles studies of quantum 
+materials.
 
-The KUBO code, maintained by Vishnu Raghuraman, is mainly written in FORTRAN 90. It implements
-the Kubo-Greenwood formula in the framework of KKR-CPA method and calculates the electrical
-conductivity of random alloys.
-
-The MuST project is a team effort, requiring to involve dedicated researchers from condensed
-matter physics, high performance computing, computational materials science, applied mathematics
-and software engineering communities. The current participants of the MuST project include:
-* Chioncel, Liviu (Institute of Physics, Augsburg University, Germany)
-* Eisenbach, Markus (Center for Computational Sciences, Oak Ridge National Laboratory, USA)
-* Raghuraman, Vishnu (Department of Physics, Carnegie Mellon University)
-* Tam, Ka-ming (Department of Physics, Louisianna State University, USA)
-* Terletska, Hanna (Department of Physics, Middle Tennessee State University, USA)
-* Wang, Yang (Pittsburgh Supercomputing Center, Carnegie Mellon University, USA)
-* Widom, Michael (Department of Physics, Carnegie Mellon University)
-* Zhang, Yi (Kavli Institute for Theoretical Sciences, Beijing 100190, China)
-
-ACKNOWLEDGEMENT
----------------
-
-The current research efforts in the development of MuST are supported in part by NSF Office
-of Advanced Cyberinfrastructure and the Division of Materials Research within the NSF
-Directorate of Mathematical and Physical Sciences under award number 1931367 (Terletska),
-1931445 (Tam), 1931525 (Wang), 2103958 (Raghuraman and Widom).
+The ultimate goal of the MuST project is to provide a computational framework for investigating 
+quantum phase transitions and electron localization in the presence of disorder in real 
+materials, and to enable computational studies of local chemical correlation effects on 
+magnetic structure, phase stability, and mechanical properties of solid-state materials 
+with complex structures.
 
 Contents
 --------
 
 .. toctree::
+   :maxdepth: 2
+   :caption: Contents
 
    usage
    installation
+   contrib
+   acknowledge

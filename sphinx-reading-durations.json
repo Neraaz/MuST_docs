@@ -1,5 +1,7 @@
 {
-    "index": 0.02,
-    "installation": 0.004,
-    "usage": 0.118
+    "acknowledge": 0.018,
+    "contrib": 0.006,
+    "index": 0.006,
+    "installation": 0.01,
+    "usage": 0.02
 }

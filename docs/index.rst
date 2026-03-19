@@ -48,7 +48,7 @@ Contents
    :caption: Contents
 
    installation
-   Usage
+   usage
    input
    tutorials
    contrib

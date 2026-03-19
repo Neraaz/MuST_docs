@@ -414,14 +414,14 @@ they should NOT be included here.</p>
 </pre></div>
 </div>
 <p><strong>Intel MKL (Sequential):</strong></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">LIBS</span> <span class="o">+=</span> <span class="o">-</span><span class="n">lmkl_intel_lp64</span> <span class="o">-</span><span class="n">lmkl_sequential</span> <span class="o">-</span><span class="n">lmkl_core</span> \
-        <span class="o">-</span><span class="n">lpthread</span> <span class="o">-</span><span class="n">lm</span> <span class="o">-</span><span class="n">ldl</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>LIBS += -L${MKL_ROOT}/lib/intel64 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core \
+        -lpthread -lm -ldl
 </pre></div>
 </div>
 <p><strong>Intel MKL (MPI + ScaLAPACK):</strong></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">LIBS</span> <span class="o">+=</span> <span class="o">-</span><span class="n">lmkl_intel_lp64</span> <span class="o">-</span><span class="n">lmkl_core</span> <span class="o">-</span><span class="n">lmkl_sequential</span> \
-        <span class="o">-</span><span class="n">lmkl_scalapack_lp64</span> <span class="o">-</span><span class="n">lmkl_blacs_openmpi_lp64</span> \
-        <span class="o">-</span><span class="n">lpthread</span> <span class="o">-</span><span class="n">lm</span> <span class="o">-</span><span class="n">ldl</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>LIBS += -L${MKL_ROOT}/lib/intel64 -lmkl_intel_lp64 -lmkl_core -lmkl_sequential \
+        -lmkl_scalapack_lp64 -lmkl_blacs_openmpi_lp64 \
+        -lpthread -lm -ldl
 </pre></div>
 </div>
 <p><strong>Intel OneAPI (Simplified):</strong></p>
@@ -441,13 +441,14 @@ they should NOT be included here.</p>
 </pre></div>
 </div>
 <p><strong>CUDA (Basic GPU support):</strong></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">LIBS</span> <span class="o">+=</span> <span class="o">-</span><span class="n">lcudart</span> <span class="o">-</span><span class="n">lcuda</span> <span class="o">-</span><span class="n">lcublas</span> <span class="o">-</span><span class="n">lcusolver</span> \
-        <span class="o">-</span><span class="n">lstdc</span><span class="o">++</span> <span class="o">-</span><span class="n">lm</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>LIBS += -L${NVHPC_PATH}/cuda/lib64 -lcudart -lcuda \
+        -L${NVHPC_ROOT}/math_libs/lib64 -lcublas -lcusolver \
+        -lstdc++ -lm
 </pre></div>
 </div>
 <p><strong>CUDA + NVHPC (optimized GPU build):</strong></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>LIBS += -L$(NVHPC_PATH)/compilers/lib -lblas -llapack \
-        -L$(NVHPC_PATH)/cuda/lib64 \
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>LIBS += -L${NVHPC_PATH}/compilers/lib -lblas -llapack \
+        -L${NVHPC_PATH}/cuda/lib64 \
         -lcudart -lnvtx3interop \
         -cuda -cudalib=cublas,cusolver \
         -gpu=cc90,cuda12.9,lineinfo \
@@ -455,17 +456,19 @@ they should NOT be included here.</p>
 </pre></div>
 </div>
 <p><strong>MKL + CUDA hybrid:</strong></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">LIBS</span> <span class="o">+=</span> <span class="o">-</span><span class="n">lmkl_intel_lp64</span> <span class="o">-</span><span class="n">lmkl_core</span> <span class="o">-</span><span class="n">lmkl_sequential</span> \
-        <span class="o">-</span><span class="n">lmkl_scalapack_lp64</span> <span class="o">-</span><span class="n">lmkl_blacs_openmpi_lp64</span> \
-        <span class="o">-</span><span class="n">lcudart</span> <span class="o">-</span><span class="n">lcuda</span> <span class="o">-</span><span class="n">lcublas</span> <span class="o">-</span><span class="n">lcusolver</span> \
-        <span class="o">-</span><span class="n">lstdc</span><span class="o">++</span> <span class="o">-</span><span class="n">lpthread</span> <span class="o">-</span><span class="n">lm</span> <span class="o">-</span><span class="n">ldl</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>LIBS += -L${MKL_ROOT}/lib/intel64 -lmkl_intel_lp64 -lmkl_core -lmkl_sequential \
+        -lmkl_scalapack_lp64 -lmkl_blacs_openmpi_lp64 \
+        -L${NVHPC_PATH}/cuda/lib64 -lcudart -lcuda \
+        -L${NVHPC_ROOT}/math_libs/lib64 -lcublas -lcusolver \
+        -lstdc++ -lpthread -lm -ldl
 </pre></div>
 </div>
 <p><strong>MKL + CUDA + GNU Fortran runtime:</strong></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">LIBS</span> <span class="o">+=</span> <span class="o">-</span><span class="n">lmkl_intel_lp64</span> <span class="o">-</span><span class="n">lmkl_core</span> <span class="o">-</span><span class="n">lmkl_sequential</span> \
-        <span class="o">-</span><span class="n">lmkl_scalapack_lp64</span> <span class="o">-</span><span class="n">lmkl_blacs_openmpi_lp64</span> \
-        <span class="o">-</span><span class="n">lcudart</span> <span class="o">-</span><span class="n">lcuda</span> <span class="o">-</span><span class="n">lcublas</span> <span class="o">-</span><span class="n">lcusolver</span> \
-        <span class="o">-</span><span class="n">lstdc</span><span class="o">++</span> <span class="o">-</span><span class="n">lpthread</span> <span class="o">-</span><span class="n">lm</span> <span class="o">-</span><span class="n">ldl</span> <span class="o">-</span><span class="n">lgfortran</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>LIBS +=  -L${MKL_ROOT}/lib/intel64 -lmkl_intel_lp64 -lmkl_core -lmkl_sequential \
+        -lmkl_scalapack_lp64 -lmkl_blacs_openmpi_lp64 \
+        -L${NVHPC_PATH}/cuda/lib64 -lcudart -lcuda \
+        -L${NVHPC_ROOT}/math_libs/lib64 -lcublas -lcusolver \
+        -lstdc++ -lpthread -lm -ldl -lgfortran
 </pre></div>
 </div>
 <p>Notes:

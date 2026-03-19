@@ -1,4 +1,4 @@
-MuST Project Overview
+Contributors
 ====================
 
 The starting point of the MuST package is the integration of two research codes: 

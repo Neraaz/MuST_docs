@@ -67,7 +67,16 @@ exclude_patterns = []
 #
 #html_theme = 'sphinx_rtd_theme'
 #html_theme = 'pydata_sphinx_theme'
-html_theme = 'furo'
+#html_theme = 'furo'
+html_theme = 'sphinx-book-theme'
+
+html_theme_options = {
+    "repository_url": "https://github.com/mstsuite/MuST",
+    "use_repository_button": True,
+    "use_edit_page_button": True,
+    "home_page_in_toc": True,
+    "show_toc_level": 2,
+}
 
 
 # Add any paths that contain custom static files (such as style sheets) here,

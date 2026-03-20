@@ -2,22 +2,36 @@ Theory
 ======================
 
 - **Theory behind MuST**  
-  `Read the document <_static/The_Theory_behind_MuST.pdf>`_{:target="_blank"}
+  .. raw:: html
+
+     <a href="_static/The_Theory_behind_MuST.pdf" target="_blank">Read the document</a>
 
 - **LSMS Matrix Calculation**  
-  `Read the document <_static/LSMSMatrixCalculation.pdf>`_{:target="_blank"}
+  .. raw:: html
+
+     <a href="_static/LSMSMatrixCalculation.pdf" target="_blank">Read the document</a>
 
 - **Single Scattering Theory**  
-  `Read the document <_static/Single_Scattering_Theory.pdf>`_{:target="_blank"}
+  .. raw:: html
+
+     <a href="_static/Single_Scattering_Theory.pdf" target="_blank">Read the document</a>
 
 - **Structure Constant Matrix**  
-  `Read the document <_static/StructureConstantMatrix.pdf>`_{:target="_blank"}
+  .. raw:: html
+
+     <a href="_static/StructureConstantMatrix.pdf" target="_blank">Read the document</a>
 
 - **LSMS Acceleration Techniques**  
-  `Read the document <_static/LSMS-Acceleration.pdf>`_{:target="_blank"}
+  .. raw:: html
+
+     <a href="_static/LSMS-Acceleration.pdf" target="_blank">Read the document</a>
 
 - **Silicon Case Study**  
-  `Read the document <_static/Silicon.pdf>`_{:target="_blank"}
+  .. raw:: html
+
+     <a href="_static/Silicon.pdf" target="_blank">Read the document</a>
 
 - **Code Structure Overview**  
-  `Read the document <_static/CodeStructureNew.pdf>`_{:target="_blank"}
+  .. raw:: html
+
+     <a href="_static/CodeStructureNew.pdf" target="_blank">Read the document</a>

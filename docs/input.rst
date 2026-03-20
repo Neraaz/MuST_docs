@@ -211,7 +211,7 @@ Mixing & Convergence Tolerances
      - Convergence threshold for potential.
    * - **Fermi Energy Tol (> 0)**
      - ``0.0000001``
-     - Tolerance for $E_f$ search.
+     - Tolerance for :math:`E_f` search.
    * - **Default Rho Mix Param.**
      - ``0.1000``
      - Mixing parameter for density.
@@ -220,7 +220,7 @@ Mixing & Convergence Tolerances
      - Mixing parameter for potential.
    * - **Negative charge tol**
      - ``0.00001``
-     - Threshold for setting $\rho(r) = 0$.
+     - Threshold for setting :math:`\rho(r) = 0`.
 
 Spin Dynamics & Magnetism
 =========================
@@ -260,13 +260,13 @@ Lmax Cutoffs & Radial Grids
      - Description / Options
    * - **Default Lmax-T matrix**
      - ``4``
-     - Controls KKR matrix size ($L_{max}$).
+     - Controls KKR matrix size (:math:`L_{max}`).
    * - **Default Lmax-Wave Func**
      - ``4``
      - Wave function expansion cutoff.
    * - **Default Lmax-Potential**
      - ``8``
-     - Potential expansion (typically $2 \times L_{max,T}$).
+     - Potential expansion (typically :math:`2 \times L_{max,T}`).
    * - **Default Lmax-Charge Den**
      - ``8``
      - Charge density expansion cutoff.
@@ -314,7 +314,7 @@ Superconductivity (Tc)
 * **Calculate Superconducting Tc**: Default ``0`` (1 for Yes).
 * **mu* (e-e interaction constant)**: Default ``0``. 0:Bennemann-Garland; 1:Modified BG.
 * **Debye Temperature (K)**: Default ``0`` (Internal database).
-* **Phonon Averages**: Parameters for $\langle\omega\rangle$, $\langle\omega^2\rangle$, and Mass $\times \langle\omega^2\rangle$.
+* **Phonon Averages**: Parameters for :math:`\langle\omega\rangle`, :math:`\langle\omega^2\rangle`, and Mass :math:`\times \langle\omega^2\rangle`.
 
 DFT + DMFT / Local Orbitals
 ---------------------------

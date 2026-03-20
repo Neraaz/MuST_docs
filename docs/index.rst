@@ -49,6 +49,7 @@ Contents
 
    installation
    usage
+   theory
    input
    tutorials
    contrib

@@ -444,14 +444,14 @@ they should NOT be included here.</p>
 </pre></div>
 </div>
 <p><strong>CUDA (Basic GPU support):</strong></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>LIBS += -L${NVHPC_PATH}/cuda/lib64 -lcudart -lcuda \
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>LIBS += -L${NVHPC_ROOT}/cuda/lib64 -lcudart -lcuda \
         -L${NVHPC_ROOT}/math_libs/lib64 -lcublas -lcusolver \
         -lstdc++ -lm
 </pre></div>
 </div>
 <p><strong>CUDA + NVHPC (optimized GPU build):</strong></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>LIBS += -L${NVHPC_PATH}/compilers/lib -lblas -llapack \
-        -L${NVHPC_PATH}/cuda/lib64 \
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>LIBS += -L${NVHPC_ROOT}/compilers/lib -lblas -llapack \
+        -L${NVHPC_ROOT}/cuda/lib64 \
         -lcudart -lnvtx3interop \
         -cuda -cudalib=cublas,cusolver \
         -gpu=cc90,cuda12.9,lineinfo \
@@ -461,7 +461,7 @@ they should NOT be included here.</p>
 <p><strong>MKL + CUDA hybrid:</strong></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>LIBS += -L${MKL_ROOT}/lib/intel64 -lmkl_intel_lp64 -lmkl_core -lmkl_sequential \
         -lmkl_scalapack_lp64 -lmkl_blacs_openmpi_lp64 \
-        -L${NVHPC_PATH}/cuda/lib64 -lcudart -lcuda \
+        -L${NVHPC_ROOT}/cuda/lib64 -lcudart -lcuda \
         -L${NVHPC_ROOT}/math_libs/lib64 -lcublas -lcusolver \
         -lstdc++ -lpthread -lm -ldl
 </pre></div>
@@ -469,7 +469,7 @@ they should NOT be included here.</p>
 <p><strong>MKL + CUDA + GNU Fortran runtime:</strong></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>LIBS +=  -L${MKL_ROOT}/lib/intel64 -lmkl_intel_lp64 -lmkl_core -lmkl_sequential \
         -lmkl_scalapack_lp64 -lmkl_blacs_openmpi_lp64 \
-        -L${NVHPC_PATH}/cuda/lib64 -lcudart -lcuda \
+        -L${NVHPC_ROOT}/cuda/lib64 -lcudart -lcuda \
         -L${NVHPC_ROOT}/math_libs/lib64 -lcublas -lcusolver \
         -lstdc++ -lpthread -lm -ldl -lgfortran
 </pre></div>

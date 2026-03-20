@@ -53,3 +53,4 @@ Contents
    tutorials
    contrib
    acknowledge
+   cite

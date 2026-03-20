@@ -1,30 +1,23 @@
 Theory
 ======================
 
-.. raw:: html
+- **Theory behind MuST**  
+  `Read the document <_static/The_Theory_behind_MuST.pdf>`_{:target="_blank"}
 
-   <iframe src="_static/The_Theory_behind_MuST.pdf" width="100%" height="200px"></iframe>
+- **LSMS Matrix Calculation**  
+  `Read the document <_static/LSMSMatrixCalculation.pdf>`_{:target="_blank"}
 
-.. raw:: html
+- **Single Scattering Theory**  
+  `Read the document <_static/Single_Scattering_Theory.pdf>`_{:target="_blank"}
 
-   <iframe src="_static/LSMSMatrixCalculation.pdf" width="100%" height="200px"></iframe>
+- **Structure Constant Matrix**  
+  `Read the document <_static/StructureConstantMatrix.pdf>`_{:target="_blank"}
 
-.. raw:: html
+- **LSMS Acceleration Techniques**  
+  `Read the document <_static/LSMS-Acceleration.pdf>`_{:target="_blank"}
 
-   <iframe src="_static/Single_Scattering_Theory.pdf" width="100%" height="200px"></iframe>
+- **Silicon Case Study**  
+  `Read the document <_static/Silicon.pdf>`_{:target="_blank"}
 
-.. raw:: html
-
-   <iframe src="_static/StructureConstantMatrix.pdf" width="100%" height="200px"></iframe>
-
-.. raw:: html
-
-   <iframe src="_static/LSMS-Acceleration.pdf" width="100%" height="200px"></iframe>
-
-.. raw:: html
-
-   <iframe src="_static/Silicon.pdf" width="100%" height="200px"></iframe>
-
-.. raw:: html
-
-   <iframe src="_static/CodeStructureNew.pdf" width="100%" height="200px"></iframe>
+- **Code Structure Overview**  
+  `Read the document <_static/CodeStructureNew.pdf>`_{:target="_blank"}

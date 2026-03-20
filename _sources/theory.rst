@@ -39,8 +39,13 @@ Theory
      - .. raw:: html
 
            <a href="_static/CodeStructureNew.pdf" target="_blank">Presentation</a>
-   
-  * - **MuST YouTube Channel**
-     - .. raw:: html
 
-           <a href="https://www.youtube.com/@MuST-Program/videos" target="_blank">Watch Videos on YouTube</a>
+
+YouTube Channel
+======================
+
+.. raw:: html
+
+   <a href="https://www.youtube.com/@MuST-Program/videos" target="_blank">
+       Watch MuST Videos on YouTube
+   </a>

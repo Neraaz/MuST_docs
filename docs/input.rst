@@ -2,7 +2,13 @@
 Input Parameters
 ============================================
 
-This document provides the exhaustive list of input parameters for the LSMS code. It includes default values, allowed ranges, and technical logic extracted from the source input file.
+This document provides a comprehensive list of input parameters for the MuST code. 
+It includes default values, allowed ranges, and technical logic extracted from 
+the source input files.
+
+Each parameter is defined in the main input file (typically start with ``i_``, for example, ``i_mst``) using the format:
+
+   ``Key :: Value``
 
 .. contents:: Table of Contents
    :depth: 2

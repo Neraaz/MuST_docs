@@ -40,9 +40,6 @@ materials, and to enable computational studies of local chemical correlation eff
 magnetic structure, phase stability, and mechanical properties of solid-state materials 
 with complex structures.
 
-Contents
---------
-
 .. toctree::
    :maxdepth: 2
    :hidden:

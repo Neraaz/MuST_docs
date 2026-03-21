@@ -67,6 +67,56 @@ Example input files are available under ``MST/sample/``.
 
    Unless modified in the architecture file, the executable name is ``mst2``.
 
+**Command Line Options:**
+
+.. list-table::
+   :header-rows: 1
+
+   * - Short Option
+     - Long Option(s)
+     - Description
+     - Default Value
+
+   * - -wp
+     - --write-procs, --write_procs
+     - Number of Writing Processes
+     - 0
+
+   * - -rp
+     - --read-procs, --read_procs
+     - Number of Reading Processes
+     - 0
+
+   * - -app
+     - --atoms-per-proc, --atoms_per_proc
+     - Number of Atoms Per Process
+     - 0
+
+   * - -cpu
+     - --cpu-only, --cpu_only
+     - Run on CPU without Acceleration
+     - -1
+
+   * - -abm
+     - --acc-bigmat, --acc_bigmat
+     - Accelerate KKR Matrix Calculation
+     - -1
+
+   * - -tl
+     - --timing-lsms, --timing_lsms
+     - Timing the LSMS Matrix Calculations
+     - -1
+
+   * - -pb
+     - --print-blocking, --print_blocking
+     - Print Blocking Details in LSMS Matrix Inverse
+     - -1
+
+   * - -nb
+     - --no-blocking, --no_blocking
+     - Perform LSMS Matrix Inverse without Blocking
+     - -1
+
 ---
 
 2. ``lsms``

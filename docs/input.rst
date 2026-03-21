@@ -682,7 +682,7 @@ DFT+DMFT Parameters
      - 0: No; 1: Yes
    * - Default Local Orbital Labels
      - d
-     - Note: Allowed values are s, p, d, f, separated by ' ', ',', or ';'
+     - Note: Allowed values are s, p, d, f, separated by ' '(space), ','(comma), or ';'(semicolon)
    * - Default Local s-Orbital Energy
      - 0.2
      - Note: Real value in Rydberg units
